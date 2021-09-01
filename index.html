@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External Scripts -->
+    <script
+      src="https://kit.fontawesome.com/41dcec254a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- My Scripts -->
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./index.css" />
     <title>The Bookworm's Haven</title>
   </head>
   <body>
+    <div class="loader">
+      <img src="images/load_gif.gif" alt="Loading..." />
+    </div>
     <div class="topnav">
       <div class="home">
         <a class="active" href="./index.html">Home</a>
@@ -17,14 +27,27 @@
       <a href="./about.html">About</a>
       <a href="./books.html">Books</a>
     </div>
-    <h1>The Bookworm's Haven</h1>
-    <p>
-      Welcome to the Bookworm's Haven. This is a place where you can find
-      digital copies of all of your Favaorite books at an affordable price! If
-      we don't have any of your favourites drop us your Information in the
-      Cantact Page and we'll E-mail you when It's available! Come along, endless
-      books await!
-    </p>
-    <a href="./books.html">Shop Now!</a>
+    <section class="landing">
+      <div class="container">
+        <h1 class="heading">The Bookworm's Haven</h1>
+        <p class="text">
+          Welcome to the Bookworm's Haven. This is the place where you can find
+          digital copies of all of your Favorite books at an affordable prices!
+          If we don't have any of your favourites, drop us your Information in
+          the Cantact Page and we'll E-mail you when it's available! <br />
+          Come along, endless books await!
+        </p>
+        <a class="page-links" href="./books.html">Shop Now!</a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div>
+        <p>
+          Copyright <i class="far fa-copyright"></i> 2021. The Bookworm's Haven.
+          All Right Reserved.
+        </p>
+      </div>
+    </footer>
   </body>
+  <script src="./script.js"></script>
 </html>

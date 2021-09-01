@@ -5,6 +5,28 @@
   font-family: sans-serif;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #67d493;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disppear {
+  animation: vanish 1s forwards;
+}
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -35,4 +57,11 @@
 .topnav a.active {
   background-color: #04aa6d;
   color: white;
+}
+
+.text {
+  color: #67d493;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
