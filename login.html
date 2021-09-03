@@ -30,7 +30,38 @@
     <section class="landing">
       <div class="container">
         <h1 class="heading">Login</h1>
-        <a class="page-links" href="./register.html">Register!</a>
+        <div class="form-shell">
+          <form action="">
+            <div class="contact-details">
+              <div class="contact-details">
+              <label for="email" class="contact-label">Email Address: </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your@email.com"
+                required
+                class="contact-input"
+              />
+            </div>
+            <div class="contact-details">
+              <label for="password" class="contact-label">Password:</label>
+              <input type="password"
+              name="password"
+              placeholder="Password"
+              required
+              class="contact-input">
+            </div>
+            <button id="contact-button" class="contact-input" type="submit">
+                Send
+              </button>
+          </form>
+        </div>
+        <div>
+        <a href="./register.html"
+          >Don't have an account? Register!</a
+        >
+        </div>
       </div>
     </section>
     <footer class="footer">

@@ -58,3 +58,22 @@
   background-color: #04aa6d;
   color: white;
 }
+
+.text {
+  color: #67d493;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.heading {
+  margin: 2%;
+}
+
+.container {
+  justify-content: initial;
+}
+
+#text {
+  font-size: 120%;
+}

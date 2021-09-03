@@ -29,7 +29,87 @@
     </div>
     <section class="landing">
       <div class="container">
-        <h1 class="heading">Contact Us!</h1>
+        <h1 id="header" class="heading">Contact Us!</h1>
+        <p class="text">
+          Do you have any questions for us? Do you want to read something we
+          don't have? Or do you just want to file a complaint? <br />
+          No Problem! Just fill this form and we'll get in touch as soon as
+          possible!
+        </p>
+        <div class="form-shell">
+          <form action="https://formspree.io/f/xknkkzok" method="POST">
+            <div class="contact-details">
+              <label for="name" class="contact-label">Full Name: </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                required
+                class="contact-input"
+              />
+            </div>
+
+            <!--Email Address-->
+            <div class="contact-details">
+              <label for="email" class="contact-label">Email Address: </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your@email.com"
+                required
+                class="contact-input"
+              />
+            </div>
+
+            <!--Phone Number-->
+            <div class="contact-details">
+              <label for="Phone" class="contact-label">Contact Number: </label>
+              <input
+                type="tel"
+                name="Phone"
+                placeholder="012 345 6789"
+                id="Phone"
+                class="contact-input"
+              />
+            </div>
+
+            <label class="contact-details">
+              Your message:
+              <textarea
+                class="contact-input"
+                name="message"
+                required
+              ></textarea>
+            </label>
+            <div class="contact-details">
+              <button id="contact-button" class="contact-input" type="submit">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+        <p class="text">
+          Visit us on social media for more news and further updates!
+        </p>
+        <div class="socials">
+          <a class="social-link" target="_blank" href="https://facebook.com/"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            class="social-link"
+            target="_blank"
+            href="https://twitter.com/?lang=en"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="social-link"
+            target="_blank"
+            href="https://www.instagram.com/?hl=en"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
       </div>
     </section>
     <footer class="footer">
