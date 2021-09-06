@@ -30,7 +30,60 @@
     <section class="landing">
       <div class="container">
         <h1 class="heading">Register!</h1>
-        <a class="page-links" href="./login.html">
+
+        <div class="form-shell">
+          <form action="">
+            <div class="contact-details">
+              <label for="name" class="contact-label">Name: </label>
+              <input
+                type="name"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+                class="contact-input"
+              />
+            </div>
+            <div class="contact-details">
+              <label for="surname" class="contact-label">Surname: </label>
+              <input
+                type="surname"
+                name="surname"
+                id="surname"
+                placeholder="Surname"
+                required
+                class="contact-input"
+              />
+            </div>
+            <div class="contact-details">
+              <label for="email" class="contact-label">Email Address: </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your@email.com"
+                required
+                class="contact-input"
+              />
+            </div>
+            <div class="contact-details">
+              <label for="password" class="contact-label">Password:</label>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required
+                class="contact-input"
+              />
+            </div>
+            <div class="contact-btn">
+              <button id="contact-button" class="contact-input" type="submit">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+        <a class="alt-link" href="./login.html">
           Already Have an Account? Login!</a
         >
       </div>
