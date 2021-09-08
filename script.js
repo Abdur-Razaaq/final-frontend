@@ -1,3 +1,4 @@
+// Pre-loader
 let loader = document.querySelector(".loader")
 
 window.addEventListener("load", vanish);
