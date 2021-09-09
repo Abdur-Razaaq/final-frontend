@@ -3,12 +3,12 @@ let products = [];
 fetch('https://sleepy-retreat-77815.herokuapp.com/show-books/').then(
     (response) =>
         response.json().then((data) => {
-            console.log(data.data);
+            // console.log(data.data);
             items = data.data;
             let container = document.querySelector(".card");
             container.innerHTML = ``;
             items.forEach((item) => {
-                console.log(item);
+                // console.log(item);
                 container.innerHTML += `
                 <div class="item">
                     <div class="info">

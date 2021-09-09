@@ -2,14 +2,14 @@ function popModal(id) {
     fetch('https://sleepy-retreat-77815.herokuapp.com/show-books/').then(
         (response) =>
             response.json().then((data) => {
-                console.log(data.data);
+                // console.log(data.data);
                 items = data.data;
                 let container = document.querySelector("#modal");
                 container.innerHTML = `<button class="cls-btn" onclick="toggleModal()">
                     <i class="far fa-times-circle"></i>
                     </button>`;
                 items.forEach((item) => {
-                    console.log(item);
+                    // console.log(item);
                     if (item[0] == id) {
                         container.innerHTML += `
                         <div class="modal-item">

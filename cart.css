@@ -5,6 +5,29 @@
   width: 35vw;
   height: 100vh;
   transition: all 0.5s linear;
+  padding: 1%;
+  border: 2px solid #04aa6d;
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #04aa6d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #048f5c;
 }
 
 .cart-container.show {
@@ -24,11 +47,24 @@
   text-decoration: underline;
 }
 
-.close-cart {
+.incart-btn {
   padding: 2% 4%;
   border: 2px solid #04aa6d;
   background-color: #333;
   color: #04aa6d;
   font-size: 16px;
   font-weight: bold;
+}
+
+.incart-btn:hover {
+  border: 2px solid #333;
+  background-color: #04aa6d;
+  color: #333;
+}
+
+@media (max-width: 800px) {
+  .cart-container {
+    width: 100vw;
+    left: -100vw;
+  }
 }
