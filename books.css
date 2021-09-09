@@ -119,13 +119,6 @@
   padding: 5% 10%;
 }
 
-#modal.modal-actve {
-  width: 60vw;
-  height: 60vw;
-  background-color: #333;
-  color: #04aa6d;
-}
-
 @media (max-width: 800px) {
   .name {
     font-weight: bold;
@@ -137,5 +130,8 @@
     margin: 10%;
     height: 60vh;
     width: 100%;
+  }
+  .cart {
+    width: 70px;
   }
 }

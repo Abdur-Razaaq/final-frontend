@@ -1,0 +1,34 @@
+.cart-container {
+  position: fixed;
+  top: 0;
+  left: -35vw;
+  width: 35vw;
+  height: 100vh;
+  transition: all 0.5s linear;
+}
+
+.cart-container.show {
+  left: 0;
+  color: #04aa6d;
+  background-color: #333;
+}
+
+.cart-item {
+  border: 2px solid #04aa6d;
+  padding: 2%;
+}
+
+.cart-title {
+  text-align: center;
+  padding: 2%;
+  text-decoration: underline;
+}
+
+.close-cart {
+  padding: 2% 4%;
+  border: 2px solid #04aa6d;
+  background-color: #333;
+  color: #04aa6d;
+  font-size: 16px;
+  font-weight: bold;
+}

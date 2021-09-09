@@ -32,7 +32,7 @@
         <h1 class="heading">Register!</h1>
 
         <div class="form-shell">
-          <form action="">
+          <form onsubmit="event.preventDefault(); register()">
             <div class="contact-details">
               <label for="name" class="contact-label">Name: </label>
               <input
@@ -71,6 +71,7 @@
               <input
                 type="password"
                 name="password"
+                id="password"
                 placeholder="Password"
                 required
                 class="contact-input"
@@ -78,7 +79,7 @@
             </div>
             <div class="contact-btn">
               <button id="contact-button" class="contact-input" type="submit">
-                Send
+                Register
               </button>
             </div>
           </form>
@@ -98,4 +99,5 @@
     </footer>
   </body>
   <script src="./script.js"></script>
+  <script src="./register.js"></script>
 </html>

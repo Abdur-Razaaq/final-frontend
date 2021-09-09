@@ -129,7 +129,7 @@
 
 @media (max-width: 1000px) {
   .landing {
-    height: 85vh;
+    height: 150vh;
   }
   .heading {
     padding: 5%;
@@ -151,5 +151,11 @@
 
   .contact-btn {
     margin-right: 8%;
+  }
+}
+
+@media (max-width: 500px) {
+  .landing {
+    height: 100vh;
   }
 }

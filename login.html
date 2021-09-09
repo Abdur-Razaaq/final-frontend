@@ -31,7 +31,7 @@
       <div class="container">
         <h1 class="heading">Login</h1>
         <div class="form-shell">
-          <form action="">
+          <form onsubmit="event.preventDefault(); login()">
             <div class="contact-details">
               <div class="contact-details">
               <label for="email" class="contact-label">Email Address: </label>
@@ -48,13 +48,14 @@
               <label for="password" class="contact-label">Password:</label>
               <input type="password"
               name="password"
+              id="password"
               placeholder="Password"
               required
               class="contact-input">
             </div>
             <div class="contact-btn">
             <button id="contact-button" class="contact-input" type="submit">
-                Send
+                Login
               </button>
             </div>
           </form>
@@ -63,6 +64,9 @@
         <a class="alt-link" href="./register.html"
           >Don't have an account? Register!</a
         >
+        <br>
+        <br>
+        <a class="alt-link" href="#">Admin Login</a>
         </div>
       </div>
     </section>
@@ -76,4 +80,5 @@
     </footer>
   </body>
   <script src="./script.js"></script>
+  <script src="./login.js"></script>
 </html>
