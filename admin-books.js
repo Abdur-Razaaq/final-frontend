@@ -17,7 +17,7 @@ fetch('https://sleepy-retreat-77815.herokuapp.com/show-books/').then(
                             <img src="${item[2]}" class="img"></img>
                         </div>
                     </div>
-                    <button class="btn" id="contact-button">Delete</button>
+                    <button onclick="delBook(${item[0]})" class="btn" id="contact-button">Delete</button>
                 </div>
 
                 `;
