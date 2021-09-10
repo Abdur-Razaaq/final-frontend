@@ -71,10 +71,10 @@ function removeFromCart(index) {
 
 function buyCart() {
     if (buy) {
-        alert("Thank you, come again.");
+        alert("Thank you, please come again!");
         cart = [];
         document.querySelector(".cart-container").classList.toggle("show");
     } else {
-        alert("Hommer you have not bought anything, where are you going");
+        alert("Cart Is Empty!");
     }
 }
