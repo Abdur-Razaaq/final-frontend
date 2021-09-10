@@ -36,6 +36,7 @@
 
 .modal-info {
   display: flex;
+  overflow-y: scroll;
 }
 
 .text-info {

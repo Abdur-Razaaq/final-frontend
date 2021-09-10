@@ -136,3 +136,10 @@
     width: 70px;
   }
 }
+
+@media (max-width: 500px) {
+  .name {
+    font-weight: bold;
+    font-size: 12px;
+  }
+}
