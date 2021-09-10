@@ -29,23 +29,23 @@
     </div>
     <section class="landing">
       <div class="container">
-        <h1 class="heading">Login</h1>
+        <h1 class="heading">Admin Login</h1>
         <div class="form-shell">
-          <form onsubmit="event.preventDefault(); login()">
+          <form onsubmit="event.preventDefault()">
             <div class="contact-details">
               <div class="contact-details">
-              <label for="email" class="contact-label">Email Address: </label>
+              <label for="username" class="contact-label">Username: </label>
               <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="your@email.com"
+                type="username"
+                name="username"
+                id="username"
+                placeholder="Username"
                 required
                 class="contact-input"
               />
             </div>
             <div class="contact-details">
-              <label for="password" class="contact-label">Password:</label>
+              <label for="password" class="contact-label">Password: </label>
               <input type="password"
               name="password"
               id="password"
@@ -54,19 +54,14 @@
               class="contact-input">
             </div>
             <div class="contact-btn">
-            <button id="contact-button" class="contact-input" type="submit">
+            <button id="contact-button" class="contact-input" onclick="adminLogin()">
                 Login
               </button>
             </div>
           </form>
         </div>
         <div class="linker">
-        <a class="alt-link" href="./register.html"
-          >Don't have an account? Register!</a
-        >
-        <br>
-        <br>
-        <a class="alt-link" href="./admin-login.html">Admin Login</a>
+        <a class="alt-link" href="./index.html">Home</a>
         </div>
       </div>
     </section>
@@ -80,5 +75,5 @@
     </footer>
   </body>
   <script src="./script.js"></script>
-  <script src="./login.js"></script>
+  <script src="./admin-login.js"></script>
 </html>

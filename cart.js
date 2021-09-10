@@ -1,4 +1,5 @@
 let cart = [];
+let buy = false;
 
 function showCart() {
     document.querySelector(".cart-container").classList.toggle("show");
@@ -15,34 +16,65 @@ function popCart() {
                 let cartContainer = document.querySelector(".cart-items");
                 cartContainer.innerHTML = `
                 <button class="incart-btn" onclick="showCart()">x</button>
-                <h1 class="cart-title">Cart</h1>`
-                cart.forEach((id) => {
-                    // console.log(id)
+                <h1 class="cart-title">Cart</h1>`;
+                let index = 0;
+                cart.forEach((book) => {
+                    // console.log(book)
                     // console.log(items)
                     items.forEach((item) => {
-                        if (id == item[0]) {
+                        if (book.id == item[0]) {
+                            buy = true;
                             totalPrice = Math.round((parseFloat(totalPrice) +
                                 parseFloat(String(item[4]).replace(",","."))) * 100) / 100;
                             cartContainer.innerHTML += `
                                 <div class="cart-item">
                                     <h4>Name: ${item[1]}</h4>
                                     <h5>Price: R ${item[4]}</h5>
-                                    <button class="incart-btn">Remove</button>
+                                    <button onclick="removeFromCart(${index})" class="incart-btn">Remove</button>
                                 </div>
                             `;
+                            index += 1;
                         }
                     })
                 })
                 document.querySelector(".cart-price").innerHTML = `
                 Total Price: R ${totalPrice}
                 </br>
-                <button class="incart-btn">BUY</button>
+                <button onclick="buyCart()" class="incart-btn">BUY</button>
                 `
             })
     )
 }
 
 function addToCart(id) {
-    cart.push(id);
-    // console.log(cart);
+    cart.push({
+        id: id,
+        index: cart.length,
+    });
+}
+
+function removeFromCart(index) {
+    newCart = []
+    cart.forEach((book) => {
+        if (book.index == index) {
+            console.log(index, book.id)
+        } else {
+            newCart.push({
+                id: book.id,
+                index: newCart.length,
+            })
+        }
+    })
+    cart = newCart;
+    popCart();
+}
+
+function buyCart() {
+    if (buy) {
+        alert("Thank you, come again.");
+        cart = [];
+        document.querySelector(".cart-container").classList.toggle("show");
+    } else {
+        alert("Hommer you have not bought anything, where are you going");
+    }
 }

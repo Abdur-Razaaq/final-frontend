@@ -1,0 +1,15 @@
+.form-bit {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.contact-input {
+  padding: 3% 6%;
+  margin-bottom: 2%;
+}
+
+label {
+  padding: 1%;
+}
