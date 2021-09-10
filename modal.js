@@ -19,7 +19,7 @@ function popModal(id) {
                                     <p class="descr">${item[3]}</p>
                                     <h2>R ${item[4]}</h2>
                                     <p>${item[5]}</p>
-                                    <button onclick="addToCart(${item[0]})">Add to Cart</button>
+                                    <button class="incart-btn" onclick="addToCart(${item[0]})">Add to Cart</button>
                                 </div>
                                 <div class="modal-img-box">
                                     <img src="${item[2]}" class="modal-img"></img>
